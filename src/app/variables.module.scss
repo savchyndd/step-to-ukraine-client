@@ -1,0 +1,76 @@
+//Color
+$color: #021f3e; //--blue-100
+$color1: #f8f8f8; //--white-100
+$color2: #c9dce2; //--blue-40
+$color3: #9cb2c9; //--blue-70-for-bttn
+$color4: #3a596e; //--blue-80
+$color5: #8f6f18; //--yellow-100
+$color6: #d3ca85; //--yellow-80
+$color7: #6a7e8a; //--blue-60
+$color8: #004e9c; //--blue-flag
+$color9: #f6f6f0; //--yellow-for-input
+$color10: #569068; //--green-input
+$color11: #620c17; //--red-error
+$color12: #e5dee3; //--red-input-fon
+$color13: #ffcc00; //--yellow-flag
+$color14: #c5dde5;
+
+$color-gradient1: rgba(156, 178, 201, 0);
+$color-gradient2: rgba(156, 178, 201, 0.56);
+$color-gradient3: rgba(53, 98, 143, 0.8);
+$color-gradient4: rgba(2, 31, 62, 0.9);
+
+//Gradient line Color
+$line-gradient1: linear-gradient(180deg, $color1 0%, $color2 100%);
+$line-gradient2: linear-gradient(180deg,
+        $color-gradient1 75.5%,
+        $color-gradient2 86.2%,
+        $color2 100);
+
+$linear-gradient-icon: linear-gradient(180deg, $color1 0%, $color2 100%);
+
+$linear-gradient-card-hover: linear-gradient(0deg,
+        $color-gradient3 0%,
+        $color-gradient3 100%);
+$linear-gradient-card-active: linear-gradient(0deg,
+        $color-gradient4 0%,
+        $color-gradient4 100%);
+
+:export {
+    color: $color;
+    color1: $color1;
+    color2: $color2;
+    color3: $color3;
+    color4: $color4;
+    color5: $color5;
+    color6: $color6;
+    color7: $color7;
+    color8: $color8;
+    color9: $color9;
+    color10: $color10;
+    color11: $color11;
+    color12: $color12;
+    color13: $color13;
+    color14: $color14;
+
+    colorGradient1: $color-gradient1;
+    colorGradient2: $color-gradient2;
+    colorGradient3: $color-gradient3;
+    colorGradient4: $color-gradient4;
+
+    lineGradient1: $line-gradient1;
+    lineGradient2: $line-gradient2;
+
+    linearGradientIcon: $linear-gradient-icon;
+    linearGradientCardHover: $linear-gradient-card-hover;
+    linearGradientCardActive: $linear-gradient-card-active;
+
+
+}
+
+// використання
+// @import '@/app/variables.module.scss';
+// .button {
+//     color: $main-color;
+//     border: 1px solid $main-color;
+//   }
