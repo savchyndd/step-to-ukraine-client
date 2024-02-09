@@ -1,0 +1,166 @@
+@import '@/app/variables.module.scss';
+
+// ----- ВСЕ классы и для Хедера и для Футтера
+.content {
+  width: 87.5vw;
+  // 1400 px - 40px; 540 px -16 px
+  padding-left: clamp(1rem, 0.05804rem + 2.791vw, 2.5rem);
+  padding-right: clamp(1rem, 0.05804rem + 2.791vw, 2.5rem);
+}
+
+.logo {
+  // 960 px - 160px; 540 px - 80px
+  width: clamp(5rem, -1.4287rem + 19.048vw, 10rem);
+}
+
+.nav_big_item {
+  text-align: center;
+  padding: 0 0.5rem 0.8125rem;
+}
+
+.nav_item__activ {
+  padding-bottom: 14px;
+  border-bottom: 1px solid $color6;
+
+  & .nav_item__link {
+    color: $color6;
+  }
+}
+
+.nav_item__link {
+  color: $color2;
+  font-family: "IrpinType";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+
+  /* 28px;*/
+  &::after {
+    display: block;
+    content: attr(title);
+    font-weight: 700;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.nav_big_item:hover,
+.nav_big_item:has(.nav_item__link:focus) {
+  // padding-bottom: 13px;
+  border-bottom: 2px solid $color13;
+}
+
+.nav_big_item:hover .nav_item__link,
+.nav_item__link:focus {
+  color: $color13;
+  font-weight: 700;
+}
+
+.big_text {
+  text-transform: uppercase;
+}
+
+// ----- ЗАКОНЧИЛИСЬ общие классы и для Хедера и для Футтера
+
+// ----- FOOTER
+.footer {
+  // margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: clamp(2.25rem, 5.40388rem - 6.154vw, 4rem);
+  background: $color;
+}
+
+.footer_header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_header .logo {
+  display: none;
+}
+
+
+.footer_menu_sns {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: clamp(1rem, 1.8572rem - 1.786vw, 1.5rem);
+  padding-top: clamp(1rem, 1.8572rem - 1.786vw, 1.5rem);
+}
+
+.footer_nav .logo {
+  margin-right: clamp(2.5rem, -3.20259rem + 8.919vw, 7.5rem);
+}
+
+
+.footer_menu {
+  width: 100%;
+}
+
+.footer_menu_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_sns {
+  width: 3rem;
+  height: 3rem;
+  fill: $color2;
+
+  &:hover {
+    fill: $color13;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-family: "IrpinType";
+  font-size: clamp(1rem, 0.8864rem + 0.568vw, 1.25rem); //1024 - 20px; 320 - 16px
+  font-style: normal;
+  font-weight: 400;
+  line-height: clamp(1.75rem, 1.8636rem + -0.568vw, 1.5rem); //1024 - 24px; 320 - 28px
+  //top - 40px ; bottom 1024 - 36px; 320 - 64px
+  color: $color2;
+  padding-top: 2.5rem;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .footer_header {
+    justify-content: space-between;
+  }
+
+  .footer_header .logo {
+    display: block;
+    width: 5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .footer_nav .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 819.98px) {
+  .footer_menu_items {
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+
+    & .nav_big_item {
+      padding-bottom: 13px;
+      /*! Пригает нужно исправить*/
+    }
+  }
+}
