@@ -1,0 +1,116 @@
+/* Akvitania_Modern */
+@font-face {
+  font-family: 'Akvitania Modern';
+  src: url('./Akvitania_Modern/Akvitania_Modern.eot'); /* IE9 Compat Modes */
+  src: local('Akvitania Modern'),
+    url('./Akvitania_Modern/Akvitania_Modern.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./Akvitania_Modern/Akvitania_Modern.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('./Akvitania_Modern/Akvitania_Modern.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./Akvitania_Modern/Akvitania_Modern.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./Akvitania_Modern/Akvitania_Modern.svg#Akvitania_Modern')
+      format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Aronetiv - Irpin Type Variable */
+/*@font-face {
+  font-family: 'Aronetiv_Irpin_Variable';
+  src: url('../src/fonts/Aronetiv_Irpin_Type_Variable.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/* Irpin Type Light - 300 */
+@font-face {
+  font-family: 'IrpinType';
+  src: url('./IrpinType/IrpinType_Light.eot'); /* IE9 Compat Modes */
+  src: local('IrpinType'),
+    /* url('./IrpinType/IrpinType_Light.eot?#iefix')
+      format('embedded-opentype'), */
+      url('./IrpinType/IrpinType_Light.woff2') format('woff2'),
+    url('./IrpinType/IrpinType_Light.woff') format('woff'),
+    url('./IrpinType/IrpinType_Light.ttf') format('ttf'),
+    url('./IrpinType/IrpinType_Light.svg') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Irpin Type Normal */
+@font-face {
+  font-family: 'IrpinType';
+  src: url('./IrpinType/IrpinType_Normal.eot'); /* IE9 Compat Modes */
+  src: local('IrpinType'),
+    /* url('./IrpinType/IrpinType_Normal.eot?#iefix')
+      format('embedded-opentype'), */
+      /* IE6-IE8 */ url('./IrpinType/IrpinType_Normal.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./IrpinType/IrpinType_Normal.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./IrpinType/IrpinType_Normal.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./IrpinType/IrpinType_Normal.svg')
+      format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Irpin Type Regular - 500 */
+@font-face {
+  font-family: 'IrpinType';
+  src: url('./IrpinType/IrpinType_Regular.eot'); /* IE9 Compat Modes */
+  src: local('IrpinType'),
+    url('./IrpinType/IrpinType_Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./IrpinType/IrpinType_Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./IrpinType/IrpinType_Regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./IrpinType/IrpinType_Regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./IrpinType/IrpinType_Regular.svg')
+      format('svg'); /* Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Irpin Type Bold */
+@font-face {
+  font-family: 'IrpinType';
+  src: url('./IrpinType/IrpinType_Bold.eot'); /* IE9 Compat Modes */
+  src: local('IrpinType'),
+    url('./IrpinType/IrpinType_Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./IrpinType/IrpinType_Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./IrpinType/IrpinType_Bold.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./IrpinType/IrpinType_Bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./IrpinType/IrpinType_Bold.svg')
+      format('svg'); /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fonts-Icon */
+@font-face {
+  font-family: 'Fonts-Icon';
+  src: url('./FontsIcon/Fonts-Icon.eot?wizrjm'); /* IE9 Compat Modes */
+  src: local('Fonts-Icon'),
+    url('./FontsIcon/Fonts-Icon.eot?wizrjm#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./FontsIcon/Fonts-Icon.woff2?wfcadb') format('woff2'),
+    /* Super Modern Browsers */ url('./FontsIcon/Fonts-Icon.woff?wizrjm')
+      format('woff'),
+    url('./FontsIcon/Fonts-Icon.ttf?wizrjm') format('truetype'),
+    url('./FontsIcon/Fonts-Icon.svg?wizrjm#Fonts-Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
