@@ -1,0 +1,214 @@
+@import '@/app/variables.module.scss';
+
+.button_default {
+  display: flex;
+  width: 83.33vw;
+  height: 60px;
+  padding: 4.44vw 14.44vw;
+  justify-content: center;
+  align-items: center;
+  gap: 4.48vw;
+
+  font-family: 'IrpinType';
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(28 / 20);
+
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  background: $color4;
+  color: $color2;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+
+  @media screen and (min-width: 1920px) {
+    width: 400px;
+    height: 62px;
+    padding: 16px 68px;
+    gap: 32px;
+  }
+
+  &:hover {
+    background: $color8;
+    color: $color6;
+    border: 0px solid $color8;
+  }
+
+  &:active {
+    background: $color;
+    color: $color1;
+  }
+
+  &:disabled {
+    background: $color7;
+    color: $color4;
+    cursor: not-allowed;
+  }
+
+  &_svg {
+    display: inline-block;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../../img/svg/arrowUp.svg') no-repeat center;
+
+    &:hover {
+      color: $color8;
+      fill: inherit;
+      stroke: inherit;
+    }
+    &:active {
+      color: $color1;
+      fill: inherit;
+      stroke: inherit;
+    }
+    &:disabled {
+      color: $color4;
+      fill: inherit;
+      stroke: inherit;
+    }
+  }
+}
+
+.button_second {
+  display: flex;
+  width: 83.33vw;
+  height: 60px;
+  padding: 4.44vw 14.44vw;
+  justify-content: center;
+  align-items: center;
+  gap: 4.48vw;
+
+  border-radius: 20px;
+  border: 1px solid $color4;
+  cursor: pointer;
+
+  font-family: 'IrpinType';
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(28 / 20);
+
+  background: $color3;
+  color: $color4;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+
+  @media screen and (min-width: 1920px) {
+    width: 400px;
+    height: 62px;
+    padding: 16px 68px;
+    gap: 32px;
+  }
+
+  &:hover {
+    background: $color2;
+
+    border: 1px solid $color8;
+    color: $color8;
+  }
+  &:active {
+    background: $color;
+    color: $color1;
+  }
+  &:disabled {
+    background: $color7;
+    color: $color4;
+  }
+
+  &_svg {
+    display: inline-block;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../../img/svg/arrowDown.svg') no-repeat center;
+  }
+}
+
+.button_support {
+  display: flex;
+  width: 83.33vw;
+  height: 60px;
+  padding: 4.44vw 14.44vw;
+  justify-content: center;
+  align-items: center;
+  gap: 4.48vw;
+
+  font-family: 'IrpinType';
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(28 / 20);
+
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  background: $color4;
+  color: $color2;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+
+  @media screen and (min-width: 1920px) {
+    width: 400px;
+    height: 62px;
+    padding: 16px 38px;
+    gap: 32px;
+  }
+
+  &:hover {
+    background: $color8;
+    color: $color6;
+    border: 0px solid $color8;
+  }
+
+  &:active {
+    background: $color;
+    color: $color1;
+  }
+
+  &:disabled {
+    background: $color7;
+    color: $color4;
+    cursor: not-allowed;
+  }
+
+  &_svg {
+    display: inline-block;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../../img/svg/arrowUp.svg') no-repeat center;
+
+    &:hover {
+      color: $color8;
+      fill: inherit;
+      stroke: inherit;
+    }
+    &:active {
+      color: $color1;
+      fill: inherit;
+      stroke: inherit;
+    }
+    &:disabled {
+      color: $color4;
+      fill: inherit;
+      stroke: inherit;
+    }
+  }
+}
