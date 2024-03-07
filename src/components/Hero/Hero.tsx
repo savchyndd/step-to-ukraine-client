@@ -113,53 +113,21 @@ const Hero = () => {
             autoplay={true}
             // className="mySwiper"
           >
-            <SwiperSlide style={{ width: '580px' }}>
-              <div className={styles.listItem}>
-                <p className={styles.listNumber}>01</p>
-                <div className={styles.listContainer}>
-                  <h3 className={styles.listTitle}>Унікальний контент</h3>
-                  <p className={styles.listText}>
-                    Ексклюзивний вміст для вивчення України, її культури та
-                    природних красот
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide style={{ width: '580px' }}>
-              <div className={styles.listItem}>
-                <p className={styles.listNumber}>02</p>
-                <div className={styles.listContainer}>
-                  <h3 className={styles.listTitle}>Зручне планування</h3>
-                  <p className={styles.listText}>
-                    Простий інструментарій для бронювання готелів, ресторанів та
-                    екскурсій
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide style={{ width: '580px' }}>
-              <div className={styles.listItem}>
-                <p className={styles.listNumber}>03</p>
-                <div className={styles.listContainer}>
-                  <h3 className={styles.listTitle}>Місцева експертиза</h3>
-                  <p className={styles.listText}>
-                    Поради та рекомендації від місцевих експертів та гідів.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide style={{ width: '580px' }}>
-              <div className={styles.listItem}>
-                <p className={styles.listNumber}>04</p>
-                <div className={styles.listContainer}>
-                  <h3 className={styles.listTitle}>Міжнародна аудиторія</h3>
-                  <p className={styles.listText}>
-                    Привертання як місцевих, так і іноземних відвідувачів для
-                    розвитку туризму в Україні.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
+            {items.map(({ nr, text, description }) => {
+              return (
+                <>
+                  <SwiperSlide key={nr} style={{ width: '580px' }}>
+                    <div className={styles.listItem}>
+                      <p className={styles.listNumber}>{nr}</p>
+                      <div className={styles.listContainer}>
+                        <h3 className={styles.listTitle}>{text}</h3>
+                        <p className={styles.listText}>{description}</p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </>
+              );
+            })}
           </Swiper>
         </div>
       </section>
