@@ -17,20 +17,24 @@ const Hero = () => {
 
   const items = [
     {
+      nr: '01',
       text: 'Унікальний контент',
       description:
         'Ексклюзивний вміст для вивчення України, її культури та природних красот',
     },
     {
+      nr: '02',
       text: 'Зручне планування',
       description:
         'Простий інструментарій для бронювання готелів, ресторанів та екскурсій',
     },
     {
+      nr: '03',
       text: 'Місцева експертиза',
       description: 'Поради та рекомендації від місцевих експертів та гідів.',
     },
     {
+      nr: '04',
       text: 'Міжнародна аудиторія',
       description:
         'Привертання як місцевих, так і іноземних відвідувачів для розвитку туризму в Україні.',
@@ -148,7 +152,7 @@ const Hero = () => {
               <div className={styles.listItem}>
                 <p className={styles.listNumber}>04</p>
                 <div className={styles.listContainer}>
-                  <h3 className={styles.listTitle}>Місцева експертиза</h3>
+                  <h3 className={styles.listTitle}>Міжнародна аудиторія</h3>
                   <p className={styles.listText}>
                     Привертання як місцевих, так і іноземних відвідувачів для
                     розвитку туризму в Україні.
