@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../Sections/Sections.module.scss';
+import styles from './Sections.module.scss';
 
 const SectionImgComposition = ({
   img_1,
@@ -16,11 +16,25 @@ const SectionImgComposition = ({
   description2: any;
   description3: any;
 }) => {
+  const dataArray = [
+    { id: '1', src: img_1, alt: description1 },
+    { id: '2', src: img_2, alt: description2 },
+    { id: '3', src: img_3, alt: description3 },
+  ];
   return (
     <>
       <div className={styles.section_gallery}>
         <div className={styles.section_line_box}></div>
         <ul className={styles.section_list}>
+          {/* {dataArray.map(({ src, alt, id }) => {
+            return (
+              <li key={id}>
+                <div className={styles.section_img_card_1}>
+                  <Image className={styles.section_img_1} src={src} alt={alt} />
+                </div>
+              </li>
+            );
+          })} */}
           <li>
             <div className={styles.section_img_card_1}>
               <Image

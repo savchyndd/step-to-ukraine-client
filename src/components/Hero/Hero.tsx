@@ -17,24 +17,24 @@ const Hero = () => {
 
   const items = [
     {
-      nr: '01',
+      id: '01',
       text: 'Унікальний контент',
       description:
         'Ексклюзивний вміст для вивчення України, її культури та природних красот',
     },
     {
-      nr: '02',
+      id: '02',
       text: 'Зручне планування',
       description:
         'Простий інструментарій для бронювання готелів, ресторанів та екскурсій',
     },
     {
-      nr: '03',
+      id: '03',
       text: 'Місцева експертиза',
       description: 'Поради та рекомендації від місцевих експертів та гідів.',
     },
     {
-      nr: '04',
+      id: '04',
       text: 'Міжнародна аудиторія',
       description:
         'Привертання як місцевих, так і іноземних відвідувачів для розвитку туризму в Україні.',
@@ -113,19 +113,17 @@ const Hero = () => {
             autoplay={true}
             // className="mySwiper"
           >
-            {items.map(({ nr, text, description }) => {
+            {items.map(({ id, text, description }) => {
               return (
-                <>
-                  <SwiperSlide key={nr} style={{ width: '580px' }}>
-                    <div className={styles.listItem}>
-                      <p className={styles.listNumber}>{nr}</p>
-                      <div className={styles.listContainer}>
-                        <h3 className={styles.listTitle}>{text}</h3>
-                        <p className={styles.listText}>{description}</p>
-                      </div>
+                <SwiperSlide key={id} style={{ width: '580px' }}>
+                  <div className={styles.listItem}>
+                    <p className={styles.listNumber}>{id}</p>
+                    <div className={styles.listContainer}>
+                      <h3 className={styles.listTitle}>{text}</h3>
+                      <p className={styles.listText}>{description}</p>
                     </div>
-                  </SwiperSlide>
-                </>
+                  </div>
+                </SwiperSlide>
               );
             })}
           </Swiper>
