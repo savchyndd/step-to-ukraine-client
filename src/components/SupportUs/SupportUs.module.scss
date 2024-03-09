@@ -1,0 +1,109 @@
+@import '@/app/variables.module.scss';
+
+.section {
+  position: relative;
+  min-width: 320px;
+
+  padding-top: 32px;
+  padding-bottom: 120px;
+  padding-left: 4.44%;
+  padding-right: 4.44%;
+  background-color: $color1;
+  background: linear-gradient(180deg, #c9dce2 0%, #f8f8f8 100%);
+
+  @media screen and (min-width: 1920px) {
+    min-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    padding-top: 40px;
+    padding-bottom: 98px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  &_hero {
+    width: 100%;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../../img/flowers.webp');
+    @media screen and (min-width: 1200px) {
+      width: 1000px;
+      height: 392px;
+      background-image: url('../../img/flowers-2x.webp');
+    }
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &_title_h2 {
+    max-width: 1060px;
+    margin-top: 40px;
+    padding: 8px;
+
+    font-family: 'Akvitania Modern';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(40 / 32);
+
+    color: $color4;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+      // font-size: 68px;
+      // line-height: calc(80 / 68);
+    }
+  }
+
+  &_text {
+    margin-top: 24px;
+    padding: 8px;
+    margin-top: 24px;
+
+    font-family: 'IrpinType';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(24 / 16);
+
+    color: $color4;
+
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1920px) {
+      margin: 0;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px;
+
+      font-size: 32px;
+      line-height: calc(40 / 32);
+    }
+  }
+
+  &_contenerForButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    gap: 40px;
+
+    @media screen and (min-width: 1920px) {
+      margin: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+}
