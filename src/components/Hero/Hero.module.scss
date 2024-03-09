@@ -1,0 +1,295 @@
+@import '@/app/variables.module.scss';
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(156, 178, 201, 0) 70.74%,
+      rgba(156, 178, 201, 0.56) 82.22%,
+      #9cb2c9 100%
+    ),
+    url('../../app/assets/hero/heroMob.jpg');
+
+  @media screen and (min-width: 1440px) {
+    background-image: image-set(
+      url('../../app/assets/hero/hero1x.webp') 1x,
+      url('../../app/assets/hero/hero2x.webp') 2x
+    );
+    background-image: -webkit-image-set(
+      url('../../app/assets/hero/hero1x.jpg') 1x,
+      url('../../app/assets/hero/hero2x.jpg') 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.container {
+  height: 100vh;
+  @media screen and (min-width: 1440px) {
+    height: 920px;
+    position: relative;
+    padding: 48px 120px 16px 120px;
+  }
+}
+
+.inputDiv {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 162px;
+    & div:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.search {
+  border-radius: 40px;
+  border: 2px solid $color2;
+  background: $color1;
+  width: 800px;
+  padding: 14px 24px;
+  color: $color7;
+  font-family: 'IrpinType';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.filter {
+  width: 338px;
+  padding: 14px 24px;
+  border-radius: 40px;
+  border: 2px solid $color2;
+  background: $color1;
+  color: $color7;
+  font-family: 'IrpinType';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  right: 24px;
+  top: 9px;
+  cursor: pointer;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1439px) {
+    padding-top: 168px;
+    padding-left: 30px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 180px;
+  }
+}
+
+.title {
+  color: $color2;
+  text-shadow: 2px 2px 10px $color-gradient4;
+  font-family: 'Akvitania Modern';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 424px) {
+    align-self: self-start;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 100px;
+    line-height: 120px;
+    margin-bottom: 48px;
+  }
+}
+
+.afterTitle {
+  color: $color2;
+  text-shadow: 2px 2px 10px $color-gradient4;
+  font-family: 'IrpinType';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  @media screen and (min-width: 425px) {
+    min-width: 350px;
+    align-self: center;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.list {
+  position: absolute;
+  bottom: 68px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  & li:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 176px;
+  margin-bottom: 44px;
+}
+
+.listItemMob {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.reverseRow {
+  flex-direction: row-reverse;
+}
+
+.mardginLeft {
+  margin-left: 32px;
+}
+
+.listNumber {
+  @media screen and (max-width: 1439px) {
+    margin-right: 32px;
+    font-family: 'IrpinType';
+    font-size: 36px;
+    color: $color3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 32px;
+    color: $color1;
+    text-shadow: 2px 2px 10px $color-gradient4;
+    font-family: 'IrpinType';
+    font-size: 64px;
+    line-height: 70px;
+    align-self: center;
+  }
+}
+
+.listTitle {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+  @media screen and (max-width: 1439px) {
+    width: 228px;
+    color: $color5;
+    font-family: 'IrpinType';
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1440px) {
+    color: $color1;
+    text-shadow: 2px 2px 10px $color-gradient4;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.listText {
+  @media screen and (max-width: 1439px) {
+    color: $color;
+    font-family: 'IrpinType';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 228px;
+  }
+  @media screen and (min-width: 1440px) {
+    color: $color1;
+    text-shadow: 2px 2px 10px $color-gradient4;
+    font-family: 'IrpinType';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 495px;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: block;
+    width: 90vw;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1810px;
+  }
+}
+
+.swiperSlide {
+  @media screen and (min-width: 1440px) {
+    width: 550px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 606px;
+  }
+}
+
+.infoMobSection {
+  @media screen and (max-width: 1439px) {
+    background-repeat: no-repeat;
+    padding: 32px 16px;
+    height: 832px;
+    display: block;
+    background-image: linear-gradient(
+        0deg,
+        $color-gradient1 70.74%,
+        $color-gradient2 82.22%,
+        $color3 100%
+      ),
+      url('../../app/assets/hero/sacura.png');
+    background-position: right center;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
