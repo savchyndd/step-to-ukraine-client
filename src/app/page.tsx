@@ -10,11 +10,11 @@ const HomePage = () => {
   return (
     <main className={styles.main}>
       <Hero />
-      <AboutProject />
+      {/* <AboutProject />
       <StepBlock />
       <Sections />
       <FaqSection />
-      <SupportUs />
+      <SupportUs /> */}
     </main>
   );
 };

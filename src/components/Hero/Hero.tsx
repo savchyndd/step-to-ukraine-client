@@ -7,6 +7,8 @@ import styles from './Hero.module.scss';
 import searchIcon from '@/app/assets/hero/search.svg';
 import Image from 'next/image';
 
+import bgImg from '../../app/assets/hero/sacura-2x.png';
+
 const Hero = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -42,7 +44,7 @@ const Hero = () => {
   ];
 
   const slides = items.map((item, index) => (
-    <div
+    <li
       key={index}
       className={`${styles.listItemMob} ${
         index % 2 === 0 ? styles.reverseRow : ''
@@ -59,7 +61,7 @@ const Hero = () => {
         <h3 className={styles.listTitle}>{item.text}</h3>
         <p className={styles.listText}>{item.description}</p>
       </div>
-    </div>
+    </li>
   ));
 
   return (
@@ -129,7 +131,15 @@ const Hero = () => {
           </Swiper>
         </div>
       </section>
-      <section className={styles.infoMobSection}>{slides}</section>
+      <section className={styles.infoMobSection}>
+        <Image
+          src={bgImg}
+          alt="sacura"
+          style={{ width: '218px', height: '346px' }}
+          className={styles.bgImg}
+        />
+        <ul style={{ zIndex: '1', position: 'relative' }}>{slides}</ul>
+      </section>
     </>
   );
 };
