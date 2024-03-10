@@ -98,22 +98,27 @@ const Hero = () => {
               enabled: true,
             }}
             breakpoints={{
-              1440: {
+              768: {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
+                scrollbar: false,
+              },
+              1440: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                scrollbar: false,
               },
               1920: {
                 slidesPerView: 3,
                 slidesPerGroup: 1,
               },
             }}
-            scrollbar={true}
+            scrollbar={{ draggable: false, hide: true }}
             init={true}
             navigation={false}
             pagination={false}
             modules={[Keyboard, Scrollbar, Navigation, Pagination]}
             autoplay={true}
-            // className="mySwiper"
           >
             {items.map(({ id, text, description }) => {
               return (

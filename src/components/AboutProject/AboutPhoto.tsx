@@ -53,7 +53,7 @@ import React from 'react';
 import { useMediaQuery } from '../../app/service/hooks/useMediaQuery';
 
 import mountains_0 from '../../app/assets/mountains_0.webp';
-import mountains_1 from '../../app/assets/mountains_1.avif';
+import mountains_1 from '../../app/assets/mountains_1.webp';
 import mountains_2 from '../../app/assets/mountains_2.webp';
 import mountains_3 from '../../app/assets/mountains_3.webp';
 
@@ -151,11 +151,11 @@ const AboutPhoto = () => {
           }}
           breakpoints={{
             1440: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               slidesPerGroup: 1,
             },
             1920: {
-              slidesPerView: 3,
+              slidesPerView: 1,
               slidesPerGroup: 1,
             },
           }}
