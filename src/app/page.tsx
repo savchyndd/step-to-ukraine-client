@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <main className={styles.main}>
       <Hero />
-      {/* <AboutProject />
-      <StepBlock />
+      <AboutProject />
+      {/* <StepBlock />
       <Sections />
       <FaqSection />
       <SupportUs /> */}
