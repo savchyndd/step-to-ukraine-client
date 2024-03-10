@@ -116,10 +116,10 @@
 }
 
 .swiper {
+  display: block;
   width: 100vw;
   border-radius: 0 40px 40px 40px;
   box-shadow: 2px 2px 10px 0 rgba(2, 31, 62, 0.5);
-  // border-radius: 50%;
   @media screen and (min-width: 768px) {
     display: block;
     width: 90vw;
@@ -130,12 +130,12 @@
 }
 
 .swiperSlide {
-  // width: 100vw;
+  width: 100vw;
   @media screen and (min-width: 1440px) {
-    // width: 550px;
+    width: 550px;
   }
   @media screen and (min-width: 1920px) {
-    // width: 606px;
+    width: 606px;
   }
 }
 
