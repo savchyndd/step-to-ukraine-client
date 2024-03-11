@@ -1,5 +1,10 @@
 'use client';
 import Image from 'next/image';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
+import styles from './AboutProject.module.scss';
 // import React from 'react';
 
 // const MyComponent = () => {
@@ -128,21 +133,56 @@ const AboutPhoto = () => {
 
   return (
     <div style={containerStyle}>
-      <Image
+      {/* <Image
         key={data[0].id}
         src={data[0].src}
         alt={data[0].alt}
         style={styleForTopPhoto.subContainer(widthIs)}
-      />
+      /> */}
       <div style={styleForThreePhotos.subContainer(widthIs)}>
-        {data.slice(1).map(item => (
+        <Swiper
+          className={styles.swiper}
+          slidesPerView={1}
+          centeredSlides={false}
+          slidesPerGroupSkip={1}
+          grabCursor={true}
+          keyboard={{
+            enabled: true,
+          }}
+          breakpoints={{
+            1440: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+            1920: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+          }}
+          scrollbar={false}
+          init={true}
+          navigation={false}
+          pagination={true}
+          modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+          autoplay={true}
+          // className="mySwiper"
+        >
+          {data.map(({ id, src, alt }) => {
+            return (
+              <SwiperSlide key={id} style={{ width: '580px' }}>
+                <Image className={styles.imgSlider} src={src} alt={alt} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        {/* {data.slice(1).map(item => (
           <Image
             key={item.id}
             src={item.src}
             alt={item.alt}
             style={imageStyle}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );
