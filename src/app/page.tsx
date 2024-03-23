@@ -11,8 +11,8 @@ const HomePage = () => {
     <main className={styles.main}>
       <Hero />
       <AboutProject />
-      {/* <StepBlock />
-      <Sections />
+      <StepBlock />
+      {/* <Sections />
       <FaqSection />
       <SupportUs /> */}
     </main>
